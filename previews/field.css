@@ -1,0 +1,77 @@
+.theme-field { --red: #9e2630; --paper: #fbf8f1; --ink: #342b24; --line: #ded6c9; --display: 'DM Serif Display', Georgia, serif; }
+.theme-field h1, .theme-field h2, .theme-field h3 { font-weight: 400; }
+.theme-field .site-header { border-top: 5px solid var(--red); }
+.theme-field .header-shell { display: grid; grid-template-columns: 1fr auto 1fr; min-height: 105px; gap: 32px; }
+.theme-field .brand { grid-column: 2; grid-row: 1; }
+.theme-field .header-shell nav { grid-column: 1; grid-row: 1; gap: 22px; flex-wrap: wrap; font-size: 10px; }
+.theme-field .header-shell > .button { grid-column: 3; grid-row: 1; justify-self: end; background: transparent; color: var(--red); border-color: #9e263055; }
+.theme-field .brand img { width: 190px; }
+.field-hero { position: relative; height: 605px; color: #fff; }
+.field-hero-photo { position: absolute; inset: 0; height: 100%; object-position: 50% 67%; }
+.field-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg,#19251acd 0%,#1a29164d 65%,#1a29162b), linear-gradient(0deg,#121b1240,transparent 65%); }
+.field-hero-content { position: relative; padding-top: 85px; }
+.field-hero h1 { font-size: clamp(64px, 6.4vw, 91px); line-height: 1.04; letter-spacing: -.025em; }
+.field-hero h1 em { color: #f5ddd0; }
+.field-hero .eyebrow { font-size: 10px; letter-spacing: .2em; }
+.field-hero-content > p:not(.eyebrow) { margin-top: 25px; font-size: 14px; }
+.field-hero-content > .button { background: var(--paper); color: var(--red); border-color: var(--paper); margin-top: 29px; }
+.field-scroll { display: flex; width: fit-content; align-items: center; gap: 22px; font-size: 10px; margin-top: 42px; }
+.field-scroll span { font-size: 20px; }
+.field-location { position: absolute; right: 48px; bottom: 30px; font-size: 10px; }
+.field-facts { padding: 22px 48px; border-bottom: 1px solid var(--line); justify-content: space-evenly; color: var(--red); font-size: 10px; letter-spacing: .04em; }
+.field-intro { text-align: center; max-width: 800px; margin: auto; }
+.field-intro h2 { font-size: 61px; }
+.field-intro h2 em { color: var(--red); }
+.field-intro > p:last-child { margin: 28px auto 0; max-width: 620px; font-size: 14px; }
+.field-collage { display: grid; grid-template-columns: 1fr .9fr 1fr; gap: 40px; align-items: center; margin-top: 55px; }
+.field-collage figure:first-child { align-self: start; }
+.field-collage figure:last-child { margin-top: 55px; }
+.field-collage img { aspect-ratio: .82; }
+.field-collage figcaption { font-size: 10px; margin-top: 15px; }
+.field-manifesto { text-align: center; }
+.field-star { color: var(--red); font-size: 45px; }
+.field-manifesto h3 { margin: 22px 0; font-size: 39px; line-height: 1.13; }
+.field-manifesto p { font-size: 12px; max-width: 240px; margin: 0 auto 26px; }
+.field-manifesto .text-link { font-size: 10px; }
+.field-beef { background: #efe9df; }
+.field-beef .section-title { text-align: center; margin-inline: auto; }
+.field-beef h2 em { color: var(--red); }
+.field-box { display: grid; grid-template-columns: 1fr 1fr; background: var(--paper); border: 1px solid #ded6c9; }
+.field-box-image img { height: 100%; aspect-ratio: 1; }
+.field-box-copy { padding: 50px; }
+.field-box-copy .product-heading { align-items: baseline; }
+.field-box-copy h3 { font-size: 40px; }
+.field-box-copy .price { font-size: 40px; color: var(--red); }
+.field-box-copy > p:not(.eyebrow) { font-size: 13px; margin-bottom: 24px; }
+.field-box-copy .box-list { font-size: 11px; }
+.field-box-copy > .text-link { display: flex; width: fit-content; margin-top: 20px; }
+.field-bulk { display: grid; grid-template-columns: 1.2fr 1.2fr 1fr; gap: 45px; padding: 40px 0; border-bottom: 1px solid var(--line); align-items: start; }
+.field-bulk h3 { font-size: 35px; }
+.field-bulk p:not(.price,.eyebrow) { margin-top: 15px; font-size: 12px; }
+.field-bulk .price { color: var(--red); }
+.field-bulk-actions { display: grid; gap: 12px; }
+.theme-field .process-intro { font-weight: 400; }
+.theme-field .process { border-top: 0; margin-top: 0; }
+.theme-field .process h3 { font-weight: 700; }
+.field-kitchen .section-title { text-align: center; margin-inline: auto; }
+.field-kitchen .section-title > p:last-child { margin-inline: auto; }
+.field-recipes { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; align-items: start; }
+.field-recipes article:nth-child(2) { margin-top: 55px; }
+.field-recipes img { aspect-ratio: 1; }
+.field-recipes .eyebrow { color: var(--red); font-size: 9px; margin-top: 25px; margin-bottom: 10px; }
+.field-recipes h3 { font-size: 29px; line-height: 1.2; }
+.field-recipes .text-link { margin-top: 18px; }
+.field-kitchen .kitchen-all { display: flex; width: fit-content; margin: 45px auto 0; }
+.theme-field .cut-section { background: #9e2630; color: var(--paper); --line: #ffffff40; }
+.theme-field .cut-button[aria-pressed="true"] { color: #fff; border-color: #fff; }
+.theme-field .cut-button { font-family: var(--display); font-size: 23px; font-weight: 400; }
+.theme-field .cut-active-image { border-radius: 200px 200px 0 0; }
+.theme-field .cut-active-name { font-size: 35px; }
+.theme-field .journal-section { border-bottom: 1px solid var(--line); }
+.theme-field .journal-inner h2 { font-size: 53px; }
+.theme-field .contact-section { background: #efe9df; }
+.theme-field .contact-copy h2 { font-size: 60px; }
+.theme-field .site-footer { background: var(--paper); }
+@media(max-width:1050px) { .theme-field .header-shell { gap: 20px; } .theme-field .brand img { width: 170px; } .theme-field .header-shell nav { gap: 8px 15px; } .field-box-copy { padding: 35px; } .field-box-copy h3 { font-size: 31px; } .field-collage { gap: 25px; } .field-manifesto h3 { font-size: 32px; } .field-bulk { gap: 28px; } }
+@media(max-width:800px) { .theme-field .header-shell { display:flex; min-height:78px; } .theme-field .header-shell nav { gap: 15px; font-size: 12px; } .field-hero { height: 580px; } .field-hero-content { padding-top: 90px; } .field-hero h1 { font-size: 66px; } .field-location { right: 20px; bottom: 20px; } .field-facts { padding: 20px; gap: 15px; } .field-intro h2 { font-size: 48px; } .field-collage { gap: 20px; grid-template-columns: 1fr 1fr; } .field-manifesto { grid-column: 1 / -1; grid-row: 2; margin-top: 20px; } .field-collage figure:last-child { margin-top: 45px; } .field-manifesto h3 br { display: none; } .field-manifesto h3 { font-size: 36px; } .field-manifesto p { max-width: 410px; } .field-box-copy { padding: 25px; } .field-box-copy .product-heading { flex-direction:column; gap: 20px; } .field-bulk { grid-template-columns: 1fr 1fr; } .field-bulk-actions { grid-column: 1 / -1; display: flex; } .field-recipes { gap: 18px; } .field-recipes h3 { font-size: 23px; } .theme-field .contact-copy h2 { font-size: 52px; } }
+@media(max-width:600px) { .field-hero { height: 590px; } .field-hero-content { padding-top: 74px; } .field-hero h1 { font-size: clamp(46px,11vw,65px); } .field-hero-content > p:not(.eyebrow) { font-size: 13px; } .field-hero-photo { object-position: 57% 65%; } .field-hero-shade { background: linear-gradient(90deg,#19251acc,#19251a55),linear-gradient(0deg,#19251a66,transparent); } .field-location { left: 20px; right: auto; font-size: 9px; } .field-facts { display:grid; grid-template-columns:1fr 1fr; gap: 14px; text-align:center; font-size: 9px; } .field-intro h2 { font-size: 39px; } .field-intro > p:last-child { font-size: 13px; } .field-collage { gap: 16px; } .field-collage img { aspect-ratio: .75; } .field-collage figcaption { font-size: 9px; } .field-manifesto h3 { font-size: 35px; } .field-box { grid-template-columns:1fr; } .field-box-image img { aspect-ratio: 1.4; height: auto; } .field-box-copy .product-heading { flex-direction: row; align-items: start; } .field-box-copy h3 { font-size: 30px; } .field-box-copy .price { font-size: 34px; } .field-bulk { grid-template-columns: 1fr; gap: 25px; } .field-bulk h3 { font-size: 34px; } .field-bulk-actions { grid-column: auto; flex-direction: column; } .field-recipes { grid-template-columns: 1fr; gap: 38px; } .field-recipes article:nth-child(2) { margin-top: 0; } .field-recipes img { aspect-ratio: 1.4; } .field-recipes h3 { font-size: 30px; } .theme-field .cut-button { font-size: 20px; } .theme-field .contact-copy h2 { font-size: 43px; } .theme-field .journal-inner h2 { font-size: 44px; } }

@@ -1,0 +1,82 @@
+.theme-butcher { --red:#b80f12; --ink:#f2f0ea; --paper:#171817; --line:#ffffff2b; --display:'Archivo Black', sans-serif; }
+.theme-butcher h1,.theme-butcher h2,.theme-butcher h3 { font-weight:400; }
+.theme-butcher h2 { font-size:clamp(42px,5vw,68px); letter-spacing:-.055em; }
+.theme-butcher .site-header { position:absolute; inset:0 0 auto; background:transparent; }
+.theme-butcher .header-shell { min-height:100px; border-bottom:1px solid #ffffff30; }
+.theme-butcher .header-shell nav a:hover { color:#ef8f83; }
+.theme-butcher .header-shell > .button { background:transparent; border-color:#ffffff70; }
+.theme-butcher .brand img { width:175px; }
+.butcher-hero { position:relative; min-height:720px; overflow:hidden; }
+.butcher-hero-photo { position:absolute; inset:0; width:100%; height:100%; object-position:center 47%; }
+.butcher-hero-shade { position:absolute; inset:0; background:linear-gradient(90deg,#101211dd,#10121199 60%,#10121155),linear-gradient(0deg,#101211ee,transparent 55%); }
+.butcher-hero-content { position:relative; padding-top:195px; }
+.butcher-hero .eyebrow { color:#f1b7a7; font-size:10px; letter-spacing:.2em; }
+.butcher-hero h1 { font-size:clamp(50px,6.3vw,88px); letter-spacing:-.055em; line-height:1.04; }
+.butcher-hero h1 > span { color:#fff; }
+.butcher-hero-content > p:not(.eyebrow) { margin-top:26px; color:#d7d3cc; font-size:14px; }
+.butcher-hero-content > .button { margin-top:30px; padding:16px 28px; }
+.butcher-hero-footer { display:flex; justify-content:space-between; align-items:center; gap:25px; margin-top:76px; border-top:1px solid #ffffff40; padding-top:22px; font-size:9px; letter-spacing:.05em; }
+.butcher-hero-footer a { display:flex; gap:25px; font-size:10px; }
+.butcher-hero-footer a span { font-size:18px; }
+.butcher-facts { justify-content:space-evenly; padding:24px 48px; background:var(--red); color:#fff; text-transform:uppercase; letter-spacing:.12em; font-size:9px; }
+.butcher-beef { background:#f2f0ea; color:#202120; --line:#20212030; }
+.butcher-heading-row { display:flex; justify-content:space-between; gap:50px; align-items:flex-end; margin-bottom:45px; }
+.butcher-heading-row .section-title { margin:0; }
+.butcher-heading-row > p { font-size:13px; padding-bottom:5px; color:#61615c; }
+.butcher-products { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.butcher-products article { display:flex; flex-direction:column; }
+.butcher-product-photo { position:relative; }
+.butcher-product-photo img { aspect-ratio:.96; }
+.butcher-product-photo > span { position:absolute; left:15px; bottom:15px; background:#202120e6; color:#fff; padding:7px 12px; font-size:8px; letter-spacing:.09em; }
+.butcher-product-copy { flex:1; display:flex; flex-direction:column; padding:27px 0 0; }
+.butcher-product-copy .product-heading { gap:15px; align-items:center; }
+.butcher-product-copy h3 { font-size:21px; letter-spacing:-.035em; }
+.butcher-product-copy .price { font-size:27px; letter-spacing:-.04em; }
+.butcher-product-copy .price span { font-size:9px; letter-spacing:0; }
+.butcher-product-copy > p { font-size:12px; color:#656660; }
+.butcher-product-copy > .button { margin-top:auto; align-self:flex-start; }
+.butcher-product-copy > .button { margin-top:28px; }
+.box-details { margin-top:16px; font-size:11px; }
+.box-details summary { display:flex; justify-content:space-between; gap:20px; list-style:none; }
+.box-details .box-list { margin:20px 0 0; font-size:10px; }
+.theme-butcher .process-intro { font-size:23px; font-weight:400; text-transform:uppercase; }
+.theme-butcher .process h3 { font-weight:700; }
+.theme-butcher .step { font-size:23px; }
+.butcher-farm { position:relative; min-height:650px; padding:75px 0; }
+.butcher-farm-photo { position:absolute; inset:0; }
+.butcher-farm-photo img { height:100%; object-position:center; }
+.butcher-farm-inner { position:relative; display:flex; justify-content:flex-end; }
+.butcher-farm-copy { width:490px; padding:45px; background:#171817f2; }
+.butcher-farm-copy h2 { font-size:43px; }
+.butcher-farm-copy .eyebrow { color:#e99688; }
+.butcher-farm-copy > p:not(.eyebrow) { margin-top:22px; font-size:13px; color:#c9c8c2; }
+.butcher-farm-copy > .lead { font-size:19px; }
+.butcher-farm-copy > .button { margin-top:27px; color:#fff; border-color:#ffffff70; }
+.theme-butcher .cut-section { background:#171817; }
+.theme-butcher .cut-section .eyebrow { color:#e99688; }
+.theme-butcher .cut-active-image { aspect-ratio:1.35; filter:contrast(1.06); }
+.theme-butcher .cut-button[aria-pressed="true"] { color:#e99688; border-color:#e99688; }
+.theme-butcher .cut-active-name { font-size:23px; text-transform:uppercase; }
+.theme-butcher .cut-active-note { color:#b7b8b0; }
+.butcher-kitchen { background:#f2f0ea; color:#202120; --line:#20212030; }
+.butcher-recipes { border-top:1px solid var(--line); }
+.butcher-recipes a { display:grid; grid-template-columns:60px 1fr 220px 50px; align-items:center; gap:30px; padding:24px 0; border-bottom:1px solid var(--line); }
+.butcher-recipes .recipe-number { color:var(--red); font-size:21px; }
+.butcher-recipes .eyebrow { font-size:9px; margin-bottom:14px; }
+.butcher-recipes h3 { font-size:29px; letter-spacing:-.045em; max-width:550px; }
+.butcher-recipes img { aspect-ratio:1.75; }
+.butcher-recipes a > span:last-child { font-size:35px; justify-self:end; }
+.theme-butcher .journal-section { background:var(--red); --line:#ffffff60; }
+.theme-butcher .journal-inner h2 { font-size:47px; }
+.theme-butcher .questions-section { background:#171817; }
+.theme-butcher .questions-grid h2 { font-size:48px; }
+.theme-butcher .contact-section { background:#202120; }
+.theme-butcher .contact-copy h2 { font-size:66px; }
+.theme-butcher .contact-copy .eyebrow { color:#e99688; }
+.theme-butcher .contact-copy > p:not(.eyebrow) { color:#c1c1b9; }
+.theme-butcher .inquiry-form input,.theme-butcher .inquiry-form textarea,.theme-butcher .inquiry-form select { background:#292a29; border-color:#ffffff45; color:#fff; }
+.theme-butcher .inquiry-form textarea::placeholder { color:#aaa; }
+.theme-butcher .site-footer { background:#111211; }
+@media(max-width:1050px) { .butcher-hero h1 { font-size:66px; } .butcher-hero { min-height:700px; } .butcher-products { gap:20px; } .butcher-product-copy .product-heading { align-items:start; flex-direction:column; gap:15px; } .butcher-product-copy h3 { font-size:23px; } .butcher-recipes a { grid-template-columns:40px 1fr 180px 30px; gap:25px; } .butcher-recipes h3 { font-size:24px; } }
+@media(max-width:800px) { .theme-butcher .header-shell { min-height:78px; } .theme-butcher .menu-toggle { border-color:#ffffff50; } .theme-butcher .header-shell nav { border:1px solid #ffffff30; } .butcher-hero { min-height:650px; } .butcher-hero-content { padding-top:165px; } .butcher-hero h1 { font-size:53px; } .butcher-hero-footer { margin-top:65px; } .butcher-hero-footer > span { font-size:8px; } .butcher-heading-row { flex-direction:column; align-items:start; gap:25px; } .butcher-product-copy h3 { font-size:20px; } .butcher-product-copy > .button { padding:12px 17px; font-size:11px; gap:15px; } .butcher-product-photo img { aspect-ratio:.7; } .butcher-farm-copy { width:430px; } .butcher-recipes a { grid-template-columns:30px 1fr 130px 25px; gap:20px; } .butcher-recipes h3 { font-size:21px; } .theme-butcher .contact-copy h2 { font-size:57px; } }
+@media(max-width:600px) { .butcher-hero { min-height:680px; } .butcher-hero-content { padding-top:160px; } .butcher-hero h1 { font-size:clamp(34px,7.7vw,46px); letter-spacing:-.055em; } .butcher-hero .eyebrow { font-size:8px; letter-spacing:.13em; } .butcher-hero-photo { object-position:63% center; } .butcher-hero-shade { background:linear-gradient(90deg,#111211e3,#1112118c),linear-gradient(0deg,#111211ed,transparent); } .butcher-hero-content > p:not(.eyebrow) { font-size:13px; max-width:290px; } .butcher-hero-content > p br { display:none; } .butcher-hero-footer { flex-wrap:wrap; margin-top:68px; gap:20px; } .butcher-hero-footer > span:last-child { display:none; } .butcher-facts { padding:20px; display:grid; grid-template-columns:1fr 1fr; gap:16px; font-size:8px; letter-spacing:.06em; text-align:center; } .butcher-products { grid-template-columns:1fr; gap:42px; } .butcher-product-photo img { aspect-ratio:1.35; } .butcher-product-copy .product-heading { flex-direction:row; } .butcher-product-copy h3 { font-size:27px; } .butcher-product-copy .price { font-size:29px; } .butcher-product-copy > .button { width:100%; font-size:12px; padding:14px 22px; } .butcher-farm { padding:200px 0 35px; min-height:0; } .butcher-farm-copy { width:100%; padding:28px; } .butcher-farm-copy h2 { font-size:34px; } .butcher-farm-photo img { object-position:27% center; } .butcher-recipes a { grid-template-columns:24px 1fr 70px; gap:14px; } .butcher-recipes img { grid-column:3; grid-row:1; aspect-ratio:.8; } .butcher-recipes a > span:last-child { display:none; } .butcher-recipes h3 { font-size:18px; } .butcher-recipes .eyebrow { font-size:8px; margin-bottom:9px; } .theme-butcher .journal-inner h2 { font-size:40px; } .theme-butcher .questions-grid h2 { font-size:40px; } .theme-butcher .contact-copy h2 { font-size:47px; } }

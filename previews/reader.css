@@ -1,0 +1,106 @@
+.document-page .container { width: min(1200px, calc(100% - 96px)); margin-inline: auto; }
+.document-page main :is(section[id], article[id], h2[id], h3[id]) { scroll-margin-top: 115px; }
+.document-page .page-hero, .document-page .faq-hero, .document-page .article-hero { padding-block: 65px; background: #fff9ef; border-bottom: 2px solid #25231e; }
+.document-page main h1 { font-family: var(--display); font-size: clamp(52px, 6.5vw, 90px); text-transform: uppercase; font-weight: 800; letter-spacing: -.015em; max-width: 850px; }
+.document-page main h1 span, .document-page main h2 span { color: #b80f12; }
+.document-page .page-hero p:not(.section-kicker), .document-page .article-deck, .document-page .faq-hero-copy > p:not(.section-kicker) { margin-top: 22px; max-width: 690px; font-size: 17px; }
+.document-page .section-kicker, .document-page .story-meta, .document-page .article-meta { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .065em; color: #655e56; }
+.document-page .section-kicker { margin-bottom: 16px; color: #b80f12; }
+.document-page .recipe-filters, .document-page .faq-jump-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.document-page .recipe-filters a, .document-page .faq-jump-links a { font-family: var(--display); font-weight: 700; font-size: 22px; text-transform: uppercase; padding: 9px 18px; background: #fff; border: 2px solid #25231e; border-radius: 10px; }
+.document-page .recipe-filters a:hover, .document-page .faq-jump-links a:hover { color: #b80f12; border-color: #b80f12; }
+.document-page .recipe-library, .document-page .journal-library, .document-page .faq-content, .document-page .article-content, .document-page .gallery-library { padding-block: 64px; }
+.document-page main :is(h2,h3,h4) { text-transform: uppercase; font-family: var(--display); }
+.document-page main h2 { font-size: 45px; font-weight: 800; }
+.document-page main h3 { font-size: 31px; }
+.document-page main h4 { font-size: 24px; margin-block: 24px 12px; }
+.document-page .recipe-category + .recipe-category { margin-top: 72px; }
+.document-page .recipe-category-heading, .document-page .recipe-subcategory-heading { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 30px; }
+.document-page .recipe-category-heading > p, .document-page .recipe-subcategory-heading > p { max-width: 400px; font-size: 15px; }
+.document-page .recipe-subcategory-heading { margin-top: 48px; }
+.document-page .recipe-card-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 26px; align-items: start; }
+.document-page .compact-recipe-card, .document-page .story-card { overflow: hidden; border: 2px solid #25231e; border-radius: 16px; background: #fff; box-shadow: 4px 4px 0 #25231e; }
+.document-page .compact-recipe-card > img, .document-page .story-card-image img { aspect-ratio: 1.4; height: auto; }
+.document-page .compact-recipe-body, .document-page .story-card-body { padding: 24px; }
+.document-page .compact-recipe-body h3, .document-page .story-card-body h3 { margin-block: 12px 16px; }
+.document-page .compact-recipe-body > p:not(.story-meta), .document-page .story-card-body > p:not(.story-meta) { font-size: 14px; }
+.document-page details summary { font-family: var(--display); font-size: 25px; font-weight: 700; text-transform: uppercase; cursor: pointer; list-style: none; }
+.document-page details summary::after { content: '+'; float: right; margin-left: 14px; color: #b80f12; }
+.document-page details[open] > summary::after { content: '−'; }
+.document-page .compact-recipe-body details { margin-top: 24px; padding-top: 16px; border-top: 1px solid #d5c9bc; }
+.document-page .compact-recipe-body details li { font-size: 14px; line-height: 1.7; margin-bottom: 10px; }
+.document-page .compact-recipe-body details ul, .document-page .compact-recipe-body details ol { padding-left: 20px; }
+.document-page .recipe-source, .document-page .recipe-photo-credits { font-size: 12px; margin-top: 30px; }
+.document-page .recipe-source a, .document-page .recipe-photo-credits a { text-decoration: underline; }
+.document-page .recipe-doneness, .document-page .recipe-tip, .document-page .recipe-note { padding: 24px; margin-top: 32px; background: #eee4d6; border-radius: 16px; }
+.document-page .recipe-doneness h2 { font-size: 32px; margin-bottom: 18px; }
+.document-page .food-safety-note { padding: 30px; margin-block: 48px 64px; background: #eee4d6; border-left: 4px solid #b80f12; border-radius: 0 16px 16px 0; }
+.document-page .food-safety-note h2 { font-size: 34px; margin-bottom: 22px; }
+.document-page .doneness-note-row { display: grid; grid-template-columns: 1.1fr 1fr; gap: 35px; align-items: center; }
+.document-page .doneness-note-row > p { font-size: 15px; }
+.document-page .doneness-reference { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.document-page .doneness-reference-card { padding: 15px 10px; background: #fff9ef; border: 1px solid #d5c9bc; border-radius: 10px; text-align: center; }
+.document-page .doneness-reference-card > * { display: block; }
+.document-page .doneness-reference-card span, .document-page .doneness-reference-card small { font-size: 12px; }
+.document-page .doneness-reference-card strong { font-family: var(--display); font-size: 28px; margin-block: 8px; }
+.document-page .photo-credits { font-size: 12px; margin-top: 40px; padding-top: 22px; border-top: 1px solid #d5c9bc; }
+.document-page .photo-credits a { text-decoration: underline; }
+.document-page .story-card-image, .document-page .journal-lead-image { display: block; }
+.document-page .story-card { height: 100%; }
+.document-page .article-body ul, .document-page .article-body ol { padding-left: 24px; }
+.document-page .article-body .cut-guide { padding-block: 24px; border-bottom: 1px solid #d5c9bc; }
+.document-page .content-cta, .document-page .faq-contact-cta { background: #eee4d6; padding-block: 54px; text-align: center; }
+.document-page .content-cta p:not(.section-kicker), .document-page .faq-contact-cta p:not(.section-kicker) { max-width: 650px; margin: 22px auto; }
+.document-page .content-cta .button, .document-page .faq-contact-cta .button { margin-top: 16px; }
+.document-page .journal-lead-card { display: grid; grid-template-columns: 1.2fr 1fr; border: 2px solid #25231e; border-radius: 16px; overflow: hidden; background: #fff; box-shadow: 5px 5px 0 #25231e; }
+.document-page .journal-lead-image img { height: 100%; aspect-ratio: 1.2; }
+.document-page .journal-lead-copy { padding: 35px; }
+.document-page .journal-lead-copy h2 { font-size: 45px; margin-block: 18px; }
+.document-page .journal-library .row { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 26px; margin-top: 40px; }
+.document-page .article-link { display: inline-flex; gap: 18px; color: #b80f12; font-size: 14px; font-weight: 700; margin-top: 22px; }
+.document-page .article-hero .container, .document-page .faq-hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: center; }
+.document-page .article-hero h1, .document-page .faq-hero h1 { font-size: clamp(48px, 5.2vw, 74px); }
+.document-page .article-hero-image img, .document-page .faq-hero-media img { aspect-ratio: 1.1; border: 2px solid #25231e; border-radius: 16px; box-shadow: 5px 5px 0 #25231e; }
+.document-page .article-breadcrumbs { font-size: 13px; margin-bottom: 22px; color: #655e56; }
+.document-page .article-meta { margin-top: 22px; }
+.document-page .article-layout { display: grid; grid-template-columns: minmax(0,2.4fr) minmax(230px,1fr); gap: 70px; align-items: start; }
+.document-page .article-body { min-width: 0; font-size: 16px; line-height: 1.85; }
+.document-page .article-body h2 { margin: 40px 0 18px; font-size: 38px; }
+.document-page .article-body h3 { margin: 28px 0 15px; font-size: 29px; }
+.document-page .article-body a { color: #b80f12; text-decoration: underline; }
+.document-page .article-body li { margin-bottom: 10px; }
+.document-page .article-callout { border-left: 4px solid #b80f12; background: #eee4d6; padding: 22px; margin-block: 28px; }
+.document-page .article-callout strong { display: block; margin-bottom: 10px; }
+.document-page .article-photo { margin-block: 32px; }
+.document-page .article-photo img { border-radius: 16px; }
+.document-page figcaption { font-size: 13px; color: #655e56; margin-top: 14px; }
+.document-page .article-photo-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 15px; margin-block: 28px; }
+.document-page .article-photo-grid img { aspect-ratio: 1.2; border-radius: 10px; }
+.document-page .article-aside, .document-page .faq-sidebar { padding: 28px; background: #eee4d6; border: 2px solid #25231e; border-radius: 16px; }
+.document-page .article-aside h2, .document-page .faq-sidebar h2 { font-size: 30px; margin-bottom: 20px; }
+.document-page .article-aside li, .document-page .faq-sidebar li { font-size: 14px; line-height: 1.7; margin-bottom: 15px; }
+.document-page .article-aside ul { padding-left: 18px; }
+.document-page .article-aside .button, .document-page .faq-sidebar .button { margin-top: 22px; }
+.document-page table { border-collapse: collapse; width: 100%; font-size: 14px; margin-block: 24px; }
+.document-page th, .document-page td { padding: 13px 12px; text-align: left; border-bottom: 1px solid #d5c9bc; }
+.document-page th { background: #eee4d6; }
+.document-page .faq-hero-media figcaption { text-align: right; }
+.document-page .faq-layout { display: grid; grid-template-columns: minmax(250px,1fr) minmax(0,2.3fr); gap: 65px; align-items: start; }
+.document-page .faq-sidebar ul { list-style: none; padding: 0; }
+.document-page .faq-sidebar strong { display: block; font-family: var(--display); text-transform: uppercase; font-size: 23px; }
+.document-page .faq-group + .faq-group { margin-top: 45px; }
+.document-page .faq-group-heading { margin-bottom: 26px; }
+.document-page .faq-group h2 { font-size: 39px; }
+.document-page .faq-item { border-bottom: 1px solid #d5c9bc; padding-block: 23px; }
+.document-page .faq-item summary { font-size: 26px; line-height: 1.3; }
+.document-page .faq-item[open] summary { color: #b80f12; }
+.document-page .faq-answer { font-size: 15px; margin-top: 20px; }
+.document-page .faq-answer a { color: #b80f12; text-decoration: underline; }
+.document-page .gallery-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 35px 26px; }
+.document-page .gallery-grid img { aspect-ratio: 1.1; border-radius: 16px; border: 2px solid #25231e; }
+.document-page .gallery-grid figcaption { display: flex; gap: 20px; }
+.document-page .gallery-grid figcaption span { color: #b80f12; font-family: var(--display); font-size: 22px; font-weight: 700; }
+@media(max-width:1050px) { .document-page .container { width: calc(100% - 64px); } .document-page .article-layout, .document-page .faq-layout { gap: 35px; } .document-page .article-hero .container, .document-page .faq-hero-grid { gap: 35px; } .document-page .recipe-card-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:800px) { .document-page .container { width: calc(100% - 40px); } .document-page .page-hero, .document-page .faq-hero, .document-page .article-hero { padding-block: 42px; } .document-page .article-layout, .document-page .faq-layout, .document-page .article-hero .container, .document-page .faq-hero-grid { grid-template-columns: 1fr; gap: 32px; } .document-page .article-aside { margin-top: 10px; } .document-page .faq-sidebar { display: none; } .document-page .journal-lead-card { grid-template-columns: 1fr; } .document-page .journal-lead-image img { aspect-ratio: 1.7; } .document-page .journal-library .row { grid-template-columns: 1fr 1fr; } .document-page .gallery-grid { grid-template-columns: 1fr 1fr; } }
+@media(max-width:600px) { .document-page .recipe-card-grid, .document-page .journal-library .row { grid-template-columns: 1fr; } .document-page .recipe-category-heading, .document-page .recipe-subcategory-heading { display: block; } .document-page .recipe-category-heading > p, .document-page .recipe-subcategory-heading > p { margin-top: 16px; } .document-page .compact-recipe-body, .document-page .story-card-body, .document-page .journal-lead-copy { padding: 24px; } .document-page .article-hero-image img, .document-page .faq-hero-media img { aspect-ratio: 1.5; } .document-page table { font-size: 12px; } .document-page th, .document-page td { padding: 10px 6px; } .document-page main h2 { font-size: 37px; } .document-page .gallery-grid { gap: 24px 16px; } .document-page .gallery-grid figcaption { font-size: 11px; gap: 9px; } }
+@media(max-width:800px) { .document-page .doneness-note-row { grid-template-columns: 1fr; gap: 24px; } .document-page .food-safety-note { padding: 24px; } }
