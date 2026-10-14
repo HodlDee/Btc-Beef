@@ -11,6 +11,8 @@ export default defineConfig({
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
         recipes: resolve(import.meta.dirname, 'recipes.html'),
+        faq: resolve(import.meta.dirname, 'faq.html'),
+        gallery: resolve(import.meta.dirname, 'gallery.html'),
         journal: resolve(import.meta.dirname, 'journal.html'),
         rotationalGrazing: resolve(import.meta.dirname, 'why-rotational-grazing-matters.html'),
         beefBox: resolve(import.meta.dirname, 'what-comes-in-a-beef-box.html'),

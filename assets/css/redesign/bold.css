@@ -1,0 +1,70 @@
+.theme-bold { --red: #ce161d; --paper: #fff9ef; --ink: #25231e; --display: 'Barlow Condensed', sans-serif; }
+.theme-bold .site-header { border-bottom: 2px solid var(--ink); }
+.bold-hero { background: var(--red); color: var(--paper); overflow: hidden; }
+.bold-hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 45px; padding-top: 62px; padding-bottom: 70px; align-items: center; }
+.bold-hero h1 { font-size: clamp(95px, 10.6vw, 154px); line-height: .85; letter-spacing: -.025em; font-weight: 800; }
+.bold-hero h1 em { display: block; margin-top: 16px; color: var(--paper); font-weight: 800; }
+.bold-hero .hero-copy > p:not(.eyebrow) { max-width: 365px; margin-top: 30px; font-size: 15px; }
+.bold-hero .eyebrow { font-size: 9px; }
+.bold-hero .hero-actions { margin-top: 26px; }
+.bold-hero .button { background: var(--paper); border-color: var(--paper); color: var(--red); }
+.bold-hero .button-secondary { background: transparent; color: var(--paper); }
+.bold-hero .hero-copy p.hero-small { font-size: 10px; margin-top: 22px; opacity: .8; }
+.bold-photo { position: relative; margin: 10px -15px 0 0; min-width: 0; }
+.photo-oval { aspect-ratio: 1.12; overflow: hidden; border-radius: 50%; border: 2px solid var(--ink); transform: rotate(-12deg); box-shadow: 12px 12px 0 var(--ink); }
+.photo-oval img { height: 100%; transform: scale(1.15) rotate(12deg); }
+.hero-sticker { position: absolute; left: -26px; bottom: -25px; width: 150px; height: 150px; border-radius: 50%; background: var(--paper); color: var(--ink); border: 2px solid var(--ink); display: flex; flex-direction: column; justify-content: center; align-items: center; transform: rotate(-13deg); box-shadow: 5px 5px 0 var(--ink); }
+.hero-sticker strong { font-family: var(--display); font-size: 36px; line-height: .95; text-align: center; padding: 7px 0; }
+.hero-sticker > span { font-size: 8px; letter-spacing: .12em; font-weight: 700; }
+.photo-scribble { position: absolute; top: -28px; right: 35px; font-family: var(--display); font-style: italic; font-size: 25px; transform: rotate(6deg); }
+.bold-ticker { display: flex; align-items: center; justify-content: space-evenly; gap: 22px; background: var(--paper); color: var(--ink); border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); padding: 16px 30px; font-family: var(--display); font-size: 26px; font-weight: 700; white-space: nowrap; }
+.bold-ticker > span:nth-child(even) { color: var(--red); font-size: 29px; }
+.bold-beef h2 em, .bold-farm h2 em, .cut-section h2 em { color: var(--red); }
+.bold-products { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; }
+.bold-product { border: 2px solid var(--ink); border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 6px 6px 0 var(--ink); background: #fff; }
+.product-image { position: relative; overflow: hidden; height: 285px; }
+.product-image img { height: 100%; object-position: center 60%; }
+.product-tag { position: absolute; left: 18px; bottom: 18px; font-size: 10px; padding: 7px 13px; border-radius: 999px; background: var(--paper); border: 1px solid var(--ink); transform: rotate(-4deg); }
+.product-body { flex: 1; padding: 30px; display: flex; flex-direction: column; }
+.product-heading h3 { font-size: 36px; max-width: 190px; }
+.product-body > p { font-size: 13px; }
+.product-body > .button { margin-top: auto; }
+.product-body > .button, .product-body .order-pair { margin-top: 25px; }
+.product-body .text-link { align-self: flex-start; margin-top: 20px; font-size: 10px; }
+.bulk-product { background: #ffe9e1; }
+.bulk-product .product-body .order-pair { margin-top: auto; padding-top: 24px; }
+.bold-farm { background: #f3e8d8; }
+.farm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+.farm-collage { position: relative; padding: 15px 30px 50px 0; }
+.collage-main { aspect-ratio: .95; border: 10px solid #fff; transform: rotate(-5deg); box-shadow: 0 3px 20px #0001; }
+.collage-small { position: absolute; width: 48%; aspect-ratio: .95; right: -15px; bottom: 0; border: 8px solid #fff; transform: rotate(8deg); }
+.farm-caption { position: absolute; bottom: 0; left: 5px; font-family: var(--display); font-size: 21px; font-weight: 700; }
+.farm-copy h2 { font-size: 67px; }
+.farm-copy > p:not(.eyebrow) { margin-top: 23px; font-size: 14px; }
+.farm-copy > .lead { font-size: 21px; }
+.farm-copy > .button { margin-top: 28px; }
+.farm-copy .facts { margin-top: 30px; border-top: 1px solid #211f1b33; padding-top: 22px; }
+.theme-bold .cut-active-image { border-radius: 25px; border: 2px solid var(--ink); }
+.theme-bold .cut-active-name { font-weight: 800; font-size: 40px; text-transform: uppercase; }
+.bold-kitchen { display: grid; grid-template-columns: 1fr 1fr; background: var(--ink); color: var(--paper); }
+.kitchen-photo { position: relative; }
+.kitchen-photo img { height: 100%; min-height: 670px; }
+.kitchen-photo > span { position: absolute; bottom: 25px; left: 30px; background: var(--paper); color: var(--ink); border-radius: 999px; padding: 10px 20px; font-family: var(--display); font-size: 20px; font-weight: 700; transform: rotate(-4deg); }
+.kitchen-copy { padding: 65px max(35px, calc((100vw - 1200px) / 2)) 65px 60px; }
+.kitchen-copy h2 { font-size: 66px; }
+.kitchen-copy h2 em { color: #f96a5a; }
+.kitchen-copy > p:not(.eyebrow) { margin-top: 24px; font-size: 13px; opacity: .8; }
+.recipe-list { margin-top: 25px; }
+.recipe-list a { display: flex; gap: 18px; align-items: center; padding: 20px 0; border-top: 1px solid #ffffff30; }
+.recipe-list a div > span { font-size: 9px; opacity: .7; }
+.recipe-list h3 { font-size: 27px; margin-top: 5px; }
+.recipe-list a > span:last-child { margin-left: auto; font-size: 25px; }
+.kitchen-copy > .button { margin-top: 22px; color: var(--paper); border-color: var(--paper); }
+.theme-bold .journal-section { background: #ffe9e1; border-bottom: 2px solid var(--ink); }
+.theme-bold .contact-section { background: var(--red); color: var(--paper); }
+.theme-bold .contact-copy h2 { font-size: 72px; }
+.theme-bold .inquiry-form > .button { border-color: var(--paper); background: var(--paper); color: var(--red); }
+.theme-bold .site-footer { background: var(--paper); }
+@media (max-width:1050px) { .bold-hero h1 { font-size: 112px; } .bold-hero-grid { gap: 25px; } .hero-sticker { width: 126px; height: 126px; } .hero-sticker strong { font-size: 29px; } .hero-sticker > span { font-size: 7px; } .farm-grid { gap: 55px; } .farm-copy h2 { font-size: 57px; } .kitchen-copy { padding-left: 35px; } .kitchen-copy h2 { font-size: 56px; } }
+@media (max-width:800px) { .bold-hero-grid { padding: 48px 0 55px; } .bold-hero h1 { font-size: 90px; } .bold-hero .hero-copy > p:not(.eyebrow) { font-size: 13px; } .bold-photo { margin-right: 0; } .photo-scribble { font-size: 20px; right: 0; } .hero-sticker { left: -10px; width: 100px; height: 100px; } .hero-sticker strong { font-size: 25px; } .hero-sticker > span { font-size: 6px; } .bold-ticker { flex-wrap: wrap; gap: 10px 20px; font-size: 21px; } .bold-ticker > span:nth-child(even) { font-size: 20px; } .bold-products { gap: 22px; } .product-body { padding: 23px; } .product-heading h3 { font-size: 28px; } .product-image { height: 230px; } .farm-grid { grid-template-columns: 1fr; gap: 45px; } .farm-collage { max-width: 550px; } .farm-copy h2 { font-size: 64px; } .bold-kitchen { grid-template-columns: 1fr; } .kitchen-photo img { min-height: 0; height: auto; aspect-ratio: 1.5; } .kitchen-copy { padding: 45px 30px; } }
+@media (max-width:600px) { .bold-hero-grid { grid-template-columns: 1fr; gap: 45px; padding: 40px 0 65px; } .bold-hero h1 { font-size: clamp(86px, 21vw, 116px); } .bold-hero .hero-copy > p:not(.eyebrow) { font-size: 14px; } .bold-hero .hero-copy .hero-small { font-size: 10px; } .bold-photo { width: 90%; margin: 0 0 0 auto; } .photo-oval { box-shadow: 8px 8px 0 var(--ink); } .hero-sticker { left: -25px; width: 115px; height: 115px; } .hero-sticker strong { font-size: 29px; } .hero-sticker > span { font-size: 6px; } .bold-ticker { justify-content: center; font-size: 19px; padding: 12px 15px; gap: 8px 12px; } .bold-ticker span:nth-last-child(-n+2) { display:none; } .bold-products { grid-template-columns: 1fr; gap: 35px; } .product-heading h3 { font-size: 32px; } .product-image { height: 260px; } .farm-collage { padding-right: 30px; } .collage-small { right: 0; } .farm-copy h2 { font-size: 53px; } .farm-caption { font-size: 18px; } .kitchen-copy h2 { font-size: 54px; } .theme-bold .contact-copy h2 { font-size: 63px; } }
